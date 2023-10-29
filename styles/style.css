@@ -440,7 +440,7 @@ aside{
     width: 310px;
     height: 225px;
     transition: background-color 4s;
-    transition-property: rotate, background-color;
+    transition-property: rotate, background-color, scale, border-radius;
     transition-timing-function: ease-in-out;
 }
 
@@ -452,47 +452,45 @@ aside{
     background-color: #FFF;
     width: 310px;
     height: 225px;
+    animation-name: example;
+    animation-duration: 25s;
+    animation-iteration-count: infinite;
+    animation-delay: 5s;
 
 }
 
 .service__thing_animation1:hover{
     background-color: rgb(166, 170, 167);
     rotate: 360.00001deg;
+    scale: 75%;
+    border-radius: 50%;
 }
 
 .service__thing_animation2:hover{
-    animation-name: example;
-    animation-duration: 10s;
+    
 }
 
 @keyframes example{
     from {rotate: 0deg;}
-    to {rotate: 36000deg;}
+    to {rotate: 7200deg;}
     0%   {background-color: rgb(255, 255, 255);}
     5%   {background-color: red;}
-    10%  {background-color: yellow;}
     15%  {background-color: blue;}
     20% {background-color: green;}
     25%   {background-color: red;}
-    30%  {background-color: yellow;}
     35%  {background-color: blue;}
     40% {background-color: green;}
     45%   {background-color: red;}
-    50%  {background-color: yellow;}
     55%  {background-color: blue;}
     60% {background-color: green;}
     65%   {background-color: red;}
-    70%  {background-color: yellow;}
     75%  {background-color: blue;}
     80% {background-color: green;}
     85%   {background-color: red;}
-    90%  {background-color: yellow;}
     95%  {background-color: blue;}
     100% {background-color: rgb(255, 255, 255);}
-    0% {scale: 50%;}
-    10% {scale: 150%;}
+    0% {scale: 90%;}
     20% {scale: 20%;}
-    30% {scale: 60%;}
     40% {scale: 0%;}
     50% {scale: 140%;}
     60% {scale: 1%;}
