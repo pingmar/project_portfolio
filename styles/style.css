@@ -323,3 +323,181 @@ aside{
     line-height: 24px; /* 160% */
     text-transform: capitalize;
 }
+
+.left_div {
+    display: flex;
+    flex-direction: row;
+    height: 24px;
+    flex-shrink: 0;
+    margin-bottom: 10px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.golden_box {
+    padding: 1px 5px;
+    background: var(--Yellow, #FFB400);
+}
+
+.left_cont{
+    width: 220px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.left_font {
+    color: var(--Black, #2B2B2B);
+    text-align: right;
+    font-kerning: none;
+    font-feature-settings: 'calt' off;
+
+    /* Paragraph Progress - 15 */
+    font-family: Inter;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 160% */
+    text-transform: capitalize;
+}
+
+.green_color{
+    color: var(--Available, #7EB942);
+}
+
+.left_capital_font{
+    color: var(--Black, #2B2B2B);
+    /* H4 - 18px */
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 123.6%; /* 22.248px */
+    text-transform: capitalize;
+}
+
+.grey_color{
+    color: var(--Paragraph-Font, #767676);
+}
+
+.new_margin {
+    margin-bottom: 2px;
+    margin-top: 15px;
+}
+
+.new_margin2 {
+    margin-bottom: 2px;
+    margin-top: 9px;
+}
+
+.left_no {
+    text-align:unset;
+}
+
+.left_ul{
+    margin-top: 15px;
+    list-style-type: none;
+    display: flex;
+    align-items:flex-start;
+    flex-direction: column;
+    padding-left: 22px;
+    list-style-image: url(../assets/Icons.svg);
+}
+
+.dow_B{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 220px;
+    height: 40px;
+    flex-shrink: 0;
+    background: var(--Yellow, #FFB400);
+}
+
+.txt{
+    color: var(--Black, #2B2B2B);
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: uppercase;
+    margin-right: 19px;
+}
+
+.left{
+    width: 305px;
+    height: 1315px;
+    flex-shrink: 0;
+}
+
+.service__thing_animation1{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: baseline;
+    background-color: #FFF;
+    width: 310px;
+    height: 225px;
+    transition: background-color 4s;
+    transition-property: rotate, background-color;
+    transition-timing-function: ease-in-out;
+}
+
+.service__thing_animation2{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: baseline;
+    background-color: #FFF;
+    width: 310px;
+    height: 225px;
+
+}
+
+.service__thing_animation1:hover{
+    background-color: rgb(166, 170, 167);
+    rotate: 360.00001deg;
+}
+
+.service__thing_animation2:hover{
+    animation-name: example;
+    animation-duration: 10s;
+}
+
+@keyframes example{
+    from {rotate: 0deg;}
+    to {rotate: 36000deg;}
+    0%   {background-color: rgb(255, 255, 255);}
+    5%   {background-color: red;}
+    10%  {background-color: yellow;}
+    15%  {background-color: blue;}
+    20% {background-color: green;}
+    25%   {background-color: red;}
+    30%  {background-color: yellow;}
+    35%  {background-color: blue;}
+    40% {background-color: green;}
+    45%   {background-color: red;}
+    50%  {background-color: yellow;}
+    55%  {background-color: blue;}
+    60% {background-color: green;}
+    65%   {background-color: red;}
+    70%  {background-color: yellow;}
+    75%  {background-color: blue;}
+    80% {background-color: green;}
+    85%   {background-color: red;}
+    90%  {background-color: yellow;}
+    95%  {background-color: blue;}
+    100% {background-color: rgb(255, 255, 255);}
+    0% {scale: 50%;}
+    10% {scale: 150%;}
+    20% {scale: 20%;}
+    30% {scale: 60%;}
+    40% {scale: 0%;}
+    50% {scale: 140%;}
+    60% {scale: 1%;}
+    70% {scale: 10%;}
+    80% {scale: 15%;}
+    90% {scale: 150%;}
+    100% {scale: 100%;}
+}
